@@ -1,0 +1,14 @@
+name: CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  simulate-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Simula o Deploy
+        run: echo "Simulação de deploy concluida!"
