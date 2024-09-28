@@ -13,5 +13,6 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           java-version: '22'
+          distribution: 'adopt'
       - name: Roda os testes com Maven
         run: mvn --batch-mode --update-snapshots verify
